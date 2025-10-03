@@ -2,12 +2,12 @@ export default class Header {
   constructor(element) {
     this.element = element;
     this.options = {
-      threshold: 0, //paramétrer avec attribut Data???
+      threshold: 0.1,
+      alwaysShowHeader: false,
     };
     this.scrollPosition = 0;
     this.lastScrollPosition = 0;
     this.html = document.documentElement;
-
     this.init();
     this.initNavMobile();
   }
@@ -19,7 +19,12 @@ export default class Header {
   }
 
   setOptions() {
-    // Verifier les differents attributs data sur this.element/la composante
+    if ('alwaysShow' in this.element.dataset) {
+      this.options.alwaysShowHeader = true;
+    }
+    if ('threshold' in this.element.dataset) {
+      this.options.threshold = parseFloat(this.element.dataset.threshold);
+    }
   }
 
   onScroll() {
@@ -32,8 +37,9 @@ export default class Header {
 
   setHeaderState() {
     if (
-      this.scrollPosition >=
-      document.scrollingElement.scrollHeight * this.options.threshold
+      this.scrollPosition >
+        document.scrollingElement.scrollHeight * this.options.threshold &&
+      !this.options.alwaysShowHeader
     ) {
       this.html.classList.add('header-is-hidden');
     } else {
@@ -43,23 +49,17 @@ export default class Header {
 
   setDirections() {
     if (this.scrollPosition >= this.lastScrollPosition) {
-      // scroll vers le bas
       this.html.classList.add('is-scrolling-down');
       this.html.classList.remove('is-scrolling-up');
     } else {
-      // scroll vers le haut
       this.html.classList.remove('is-scrolling-down');
       this.html.classList.add('is-scrolling-up');
     }
   }
 
   initNavMobile() {
-    const toggle = this.element.querySelectorAll('.js-toggle');
-    for (let i = 0; i < toggle.length; i++) {
-      const tog = toggle[i];
-
-      tog.addEventListener('click', this.onToggleNav.bind(this));
-    }
+    const toggle = this.element.querySelector('.js-toggle');
+    toggle.addEventListener('click', this.onToggleNav.bind(this));
   }
 
   onToggleNav() {
