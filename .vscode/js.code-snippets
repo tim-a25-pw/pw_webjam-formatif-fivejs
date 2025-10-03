@@ -1,0 +1,64 @@
+
+{
+  "TimDoc - Commentaire sur une classe": {
+    "prefix": "tim-doc-class",
+    "body": ["  /** ${1:method description} */"],
+    "description": "Ajouter un commentaire sur une méthode"
+  },
+  "TimDoc - Commentaire sur une méthode": {
+    "prefix": "tim-doc-method",
+    "body": [
+      "  /**",
+      "   * ${1:method description}",
+      "   * @param {${2:type}} ${3:name} - ${4:description}",
+      "   */"
+    ],
+    "description": "Ajouter un commentaire sur une méthode"
+  },
+  "TimDoc - ClassJs": {
+    "prefix": "tim-jsClass",
+    "body": [
+      "export default class ${1:Name} {",
+      "    constructor(element) {",
+      "    this.element = element",
+      "    }",
+      "    init(){",
+      "    }",
+      "}",
+    ],
+    "description": "Class Js"
+  },
+  "TimDoc - Create Js Func": {
+    "prefix": "tim-jsFunc",
+    "body": [
+      "${1:FuncName}(${2:Params}){",
+      " ${3://Peter}",
+      "}"
+    ],
+    "description": "Func Js"
+  },
+  "JsData":{
+    "prefix": "tim-jsData",
+    "body": [
+      "if ('${1:dataName}' in this.el.${2:dataSetName}){",
+      " ${3://The horse is here}",
+      "}",
+    ]
+  },
+  "TimDoc - gsap": {
+    "prefix": "tim-Gsap",
+    "body": [
+      "import {gsap} from 'gsap';",
+      "import { ScrollTrigger } from 'gsap/ScrollTrigger.js';",
+      "import { ScrollSmoother } from 'gsap/ScrollSmoother.js';",
+    ],
+    "description": "Func Js"
+  },
+  "TimDoc - three": {
+    "prefix": "tim-3",
+    "body": [
+      "import * as THREE from 'three';",
+    ],
+    "description": "Func Js"
+  }
+}
