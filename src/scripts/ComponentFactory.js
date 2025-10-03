@@ -1,7 +1,11 @@
+import Tabs from './components/Tabs.js';
+
 export default class ComponentFactory {
   constructor() {
     this.componentInstances = [];
-    this.componentList = {};
+    this.componentList = {
+      Tabs,
+    };
     this.init();
   }
   init() {
