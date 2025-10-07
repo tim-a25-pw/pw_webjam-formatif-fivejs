@@ -1,0 +1,18 @@
+.produits{
+
+    .cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 40px;
+        
+    }
+
+    .button{
+        background-color: var(--color-accent);
+    }
+
+    .card{
+        background-color: var(--color-white);
+        
+    }
+}
