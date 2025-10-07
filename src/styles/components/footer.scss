@@ -1,6 +1,24 @@
 .footer {
+    background-color: var(--color-white);
     .wrapper {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        .left,
+        .right {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .left {
+            align-items: start;
+        }
+        .right {
+            align-items: end;
+        }
+        ul {
+            margin: 0;
+            display: flex;
+            gap: 20px;
+        }
     }
 }
