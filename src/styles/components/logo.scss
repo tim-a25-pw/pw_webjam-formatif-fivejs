@@ -1,0 +1,11 @@
+.logo {
+    display: flex;
+    align-items: end;
+    height: 100%;
+
+    .icon {
+        color: var(--color-primary);
+    }
+    font-family: var(--font-primary);
+    font-weight: 900;
+}

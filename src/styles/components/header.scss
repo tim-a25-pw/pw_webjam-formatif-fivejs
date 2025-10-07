@@ -7,8 +7,8 @@
 
     //background-color: var(--color-bg-secondary);
     align-items: center;
-    display: flex;
-    justify-content: space-between;
+    // display: flex;
+    // justify-content: space-between;
     padding: 0 var(--spacing-sm);
     height: var(--header-height);
     position: sticky;
@@ -16,16 +16,23 @@
     z-index: 10;
     transition: all 0.4s $ease-out-expo;
 
-    &::before {
-        content: '';
-        background: var(--color-bg-secondary);
-        z-index: 2;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
+    background-color: var(--color-white);
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
+
+    // &::before {
+    //     content: '';
+    //     background: var(--color-bg-secondary);
+    //     z-index: 2;
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     width: 100%;
+    //     height: 100%;
+    // }
 
     @media screen and (min-width: $breakpoint-lg) {
         padding: 0 var(--spacing-lg);
@@ -207,5 +214,11 @@
     overflow: hidden;
     @media screen and (min-width: $breakpoint-md) {
         overflow: auto;
+    }
+}
+
+ul {
+    li {
+        display: inline;
     }
 }
