@@ -1,0 +1,17 @@
+.hero {
+    height: 720px;
+    padding: 60px 0;
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+
+    .hero_content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+        align-items: start;
+    }
+}
