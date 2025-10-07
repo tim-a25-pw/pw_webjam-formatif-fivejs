@@ -1,83 +1,14 @@
 {% include "_partials/_header.html" %}
-
-<section>
+<section class="hero">
     <div class="wrapper">
-        <h1>Tabs</h1>
-        <h2>Composante de base</h2>
-
-        <!-- 
-            BASE DE TABS 
-        -->
-        <section class="tabs" data-component="Tabs">
-            <div class="tabs__header">
-                <button class="js-tab" data-tab-id="histoire">Histoire</button>
-                <button class="js-tab" data-tab-id="tourisme">Tourisme</button>
-                <button class="js-tab" data-tab-id="economie">Économie</button>
-                <button class="js-tab" data-tab-id="services">Services</button>
-            </div>
-            <div class="tabs__content">
-                <!-- Histoire -->
-                <div class="tab__content" data-tab-content-id="histoire">
-                    <p>
-                        La MRC de Baie Ste-Catherine est située sur la rive nord du fleuve Saint-Laurent, dans la région de la Côte-Nord au Québec. La région a
-                        une longue histoire de peuplement autochtone, avec des preuves d'occupation humaine remontant à plus de 8000 ans.
-                    </p>
-                    <p>
-                        Les Européens ont commencé à s'installer dans la région au XVIIe siècle, avec l'établissement de postes de traite de fourrures sur les
-                        rives du fleuve Saint-Laurent. Au XIXe siècle, l'industrie de la pêche s'est développée dans la région, avec des villages de pêcheurs
-                        établis le long de la côte.
-                    </p>
-                </div>
-
-                <!-- Tourisme -->
-                <div class="tab__content" data-tab-content-id="tourisme">
-                    <p>
-                        La MRC de Baie Ste-Catherine est une destination touristique populaire, connue pour son observation des baleines. Les visiteurs peuvent
-                        prendre des excursions en bateau pour voir les baleines de près dans leur habitat naturel. Les visiteurs peuvent également voir des
-                        phoques, des dauphins et d'autres animaux marins lors de ces excursions.
-                    </p>
-                    <p>
-                        La région est également connue pour ses sentiers de randonnée, notamment la promenade de la Pointe-aux-Épinettes, qui offre une vue
-                        imprenable sur le fleuve Saint-Laurent. Les visiteurs peuvent également profiter des plages de sable fin de la région, comme la plage de
-                        l'Anse-à-Cousins.
-                    </p>
-                </div>
-
-                <!-- Économie -->
-                <div class="tab__content" data-tab-content-id="economie">
-                    <p>
-                        L'économie de la MRC de Baie Ste-Catherine est principalement basée sur la pêche, le transport maritime et le tourisme. La région est le
-                        foyer de plusieurs entreprises de pêche, notamment la pêche au homard et la pêche à la morue.
-                    </p>
-                    <p>
-                        Le transport maritime est également important dans la région, avec plusieurs ports de mer importants situés le long de la côte. Les
-                        entreprises de transport maritime offrent des services de transport de marchandises et de passagers vers d'autres ports de la région.
-                    </p>
-                    <p>
-                        Le tourisme est également un secteur économique important dans la MRC de Baie Ste-Catherine. L'observation des baleines est la
-                        principale attraction touristique de la région, mais il y a aussi de nombreux autres sites touristiques, notamment les musées, les
-                        plages et les sentiers de randonnée.
-                    </p>
-                </div>
-
-                <!-- Services -->
-                <div div class="tab__content" data-tab-content-id="services">
-                    <p>
-                        La MRC de Baie Ste-Catherine offre une variété de services aux résidents de la région. Le bureau de la MRC est situé dans la ville de
-                        Baie Ste-Catherine et offre des services administratifs aux municipalités membres de la MRC.
-                    </p>
-                    <p>
-                        La MRC de Baie Ste-Catherine est également responsable de la gestion des matières résiduelles dans la région. Le centre de tri de la MRC
-                        est situé à Baie Ste-Catherine et offre des services de recyclage et de gestion des déchets pour les résidents et les entreprises de la
-                        région.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- 
-            FIN DE BASE DE TABS
-        -->
+        <div class="hero_media">
+            <img src="" alt="" />
+        </div>
+        <div class="hero_content">
+            <h1>Title</h1>
+            <p>Descipriton</p>
+            <div class="button">CTA</div>
+        </div>
     </div>
 </section>
 
@@ -89,69 +20,55 @@
             TABS AVEC data-default-tab
         -->
 
-        <section class="tabs" data-component="Tabs" data-default-tab="economie">
+        <section class="tabs" data-component="Tabs" data-default-tab="plomberie">
             <div class="tabs__header">
-                <button class="js-tab" data-tab-id="histoire">Histoire</button>
-                <button class="js-tab" data-tab-id="tourisme">Tourisme</button>
-                <button class="js-tab" data-tab-id="economie">Économie</button>
-                <button class="js-tab" data-tab-id="services">Services</button>
+                <button class="js-tab" data-tab-id="plomberie">Plomberie</button>
+                <button class="js-tab" data-tab-id="electricite">Électricité</button>
+                <button class="js-tab" data-tab-id="peinture">Peinture</button>
             </div>
             <div class="tabs__content">
                 <!-- Histoire -->
-                <div class="tab__content" data-tab-content-id="histoire">
-                    <p>
-                        La MRC de Baie Ste-Catherine est située sur la rive nord du fleuve Saint-Laurent, dans la région de la Côte-Nord au Québec. La région a
-                        une longue histoire de peuplement autochtone, avec des preuves d'occupation humaine remontant à plus de 8000 ans.
-                    </p>
-                    <p>
-                        Les Européens ont commencé à s'installer dans la région au XVIIe siècle, avec l'établissement de postes de traite de fourrures sur les
-                        rives du fleuve Saint-Laurent. Au XIXe siècle, l'industrie de la pêche s'est développée dans la région, avec des villages de pêcheurs
-                        établis le long de la côte.
-                    </p>
-                </div>
+                <div class="tab__content" data-tab-content-id="histoire"></div>
 
                 <!-- Tourisme -->
                 <div class="tab__content" data-tab-content-id="tourisme">
-                    <p>
-                        La MRC de Baie Ste-Catherine est une destination touristique populaire, connue pour son observation des baleines. Les visiteurs peuvent
-                        prendre des excursions en bateau pour voir les baleines de près dans leur habitat naturel. Les visiteurs peuvent également voir des
-                        phoques, des dauphins et d'autres animaux marins lors de ces excursions.
-                    </p>
-                    <p>
-                        La région est également connue pour ses sentiers de randonnée, notamment la promenade de la Pointe-aux-Épinettes, qui offre une vue
-                        imprenable sur le fleuve Saint-Laurent. Les visiteurs peuvent également profiter des plages de sable fin de la région, comme la plage de
-                        l'Anse-à-Cousins.
-                    </p>
+                    <div class="tab__description">
+                        <h2>PRODUIT VEDETTE</h2>
+                        <p>
+                            Rhoncus morbi et augue nec, in id ullamcorper at sit. Condimentum sit nunc in eros scelerisque sed. Commodo in viverra nunc,
+                            ullamcorper ut. Non, amet, aliquet scelerisque nullam sagittis, pulvinar.
+                        </p>
+                        <a href="" class="button">Voir tout</a>
+                    </div>
+                    <div class="tab_media">
+                        <img src="" alt="" />
+                    </div>
                 </div>
-
-                <!-- Économie -->
-                <div class="tab__content" data-tab-content-id="economie">
-                    <p>
-                        L'économie de la MRC de Baie Ste-Catherine est principalement basée sur la pêche, le transport maritime et le tourisme. La région est le
-                        foyer de plusieurs entreprises de pêche, notamment la pêche au homard et la pêche à la morue.
-                    </p>
-                    <p>
-                        Le transport maritime est également important dans la région, avec plusieurs ports de mer importants situés le long de la côte. Les
-                        entreprises de transport maritime offrent des services de transport de marchandises et de passagers vers d'autres ports de la région.
-                    </p>
-                    <p>
-                        Le tourisme est également un secteur économique important dans la MRC de Baie Ste-Catherine. L'observation des baleines est la
-                        principale attraction touristique de la région, mais il y a aussi de nombreux autres sites touristiques, notamment les musées, les
-                        plages et les sentiers de randonnée.
-                    </p>
+                <div class="tab__content" data-tab-content-id="plomberie">
+                    <div class="tab__description">
+                        <h2>PRODUIT VEDETTE</h2>
+                        <p>
+                            Rhoncus morbi et augue nec, in id ullamcorper at sit. Condimentum sit nunc in eros scelerisque sed. Commodo in viverra nunc,
+                            ullamcorper ut. Non, amet, aliquet scelerisque nullam sagittis, pulvinar.
+                        </p>
+                        <a href="" class="button">Voir tout</a>
+                    </div>
+                    <div class="tab_media">
+                        <img src="" alt="" />
+                    </div>
                 </div>
-
-                <!-- Services -->
-                <div div class="tab__content" data-tab-content-id="services">
-                    <p>
-                        La MRC de Baie Ste-Catherine offre une variété de services aux résidents de la région. Le bureau de la MRC est situé dans la ville de
-                        Baie Ste-Catherine et offre des services administratifs aux municipalités membres de la MRC.
-                    </p>
-                    <p>
-                        La MRC de Baie Ste-Catherine est également responsable de la gestion des matières résiduelles dans la région. Le centre de tri de la MRC
-                        est situé à Baie Ste-Catherine et offre des services de recyclage et de gestion des déchets pour les résidents et les entreprises de la
-                        région.
-                    </p>
+                <div class="tab__content" data-tab-content-id="peinture">
+                    <div class="tab__description">
+                        <h2>PRODUIT VEDETTE</h2>
+                        <p>
+                            Rhoncus morbi et augue nec, in id ullamcorper at sit. Condimentum sit nunc in eros scelerisque sed. Commodo in viverra nunc,
+                            ullamcorper ut. Non, amet, aliquet scelerisque nullam sagittis, pulvinar.
+                        </p>
+                        <a href="" class="button">Voir tout</a>
+                    </div>
+                    <div class="tab_media">
+                        <img src="" alt="" />
+                    </div>
                 </div>
             </div>
         </section>
