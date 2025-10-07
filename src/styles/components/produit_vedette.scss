@@ -1,0 +1,15 @@
+.produit_vedette {
+    margin-bottom: 100px;
+
+    .tab__content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+
+    .tab__description {
+    }
+
+    .tab_media {
+    }
+}
